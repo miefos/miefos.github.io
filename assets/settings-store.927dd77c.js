@@ -1,0 +1,1 @@
+import{S as e}from"./index.232bb102.js";const o=e("settings",{state:()=>({settings:{}}),actions:{get(){this.settings=JSON.parse(localStorage.getItem("settings"))||{}},update(t,s){console.log("Updating settings"),console.log(this.settings),this.settings[t]=s,this.updateToDB(t,s)},updateToDB(){localStorage.setItem("settings",JSON.stringify(this.settings))}}});export{o as u};
